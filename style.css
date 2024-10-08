@@ -1,0 +1,15 @@
+*{padding: 0;margin: 0;box-sizing: border-box} 
+
+body{background-image: url('Imgs/Fondo.jpg');background-repeat: no-repeat;background-size: cover;background-position: center;height: 100%}
+
+.containTools{  border: 0.5px solid hsla(0, 0%, 100%, 0.26);background-color: hsla(0, 0%, 100%, 0.26);border-radius: 15px;margin:15px 3px;height: 80px; box-shadow: 2px 2px 10px hsla(0, 0%, 100%, 0.414) ;}
+
+.barTools{margin:5px;border-radius:2px;height: 90%;width: auto;display: flex}
+
+.option{flex-direction: row;flex-wrap: wrap;position: relative;border-radius: 16px 3px 3px 16px ;margin: 5px 2px;width: 100%;padding:auto;text-decoration: none;color:azure;text-align:center;font-size: 30px}
+
+.option:nth-child(5) {background-image: url('Imgs/profile.jpg');background-repeat: no-repeat;background-size: cover;background-position: center;height: 60px;width: 270px;flex-direction: row;flex-wrap: wrap;position: relative;border-radius: 50%;margin: 5px 10px;text-decoration: none;text-align: center}
+
+a {display: flex;justify-content: center;align-items: center}
+
+a:hover{background-color: hsla(0, 0%, 100%, 0.405) ;border: 3px solid hsla(40, 77%, 47%, 0.63); color:hsl(13.27deg 59.79% 37.06%); font-size: 33px;text-shadow: 3px 3px 3px hsla(13, 60%, 37%, 0.619)}
