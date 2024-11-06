@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Proyecto N°1</title>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <title>Sistema de gestión Vehícular</title>
 </head>
 <body>
    <header class="containTools">
-    <div class="barTools">
-        <a href="#" id="01" class="option">Inicio</a>
-        <a href="#" id="02" class="option">Registrar</a>
-        <a href="#" id="03" class="option">Opciones</a>
-        <a href="#" id="04" class="option">Nosotros</a>
-        <a href="#" id="05" class="option"></a> 
-    </div>
+    <nav class="barTools" onclick="optionList">
+        <a href="#" id="opc01" class="option">Inicio</a>
+        <a href="#" id="opc02" class="option">Registrar</a>
+        <a href="#" id="opc03" class="option">Opciones</a>
+        <a href="#" id="opc04" class="option">Nosotros</a>
+        <a href="#" id="opc05" class="option"></a>    
+    </nav>
+        <ul class = "despOption">
+            <a href="#">Tamaño de fuentes</a>
+            <a href="#">tipografía</a>
+            <a href="#">tema</a>
+        </ul>
+        <ul class="despPerfil">
+            <a href="#">Perfil</a>
+            <a href="#">Plan</a>
+            <a href="#">Salir</a>
+        </ul>
    </header>
 <main>
    <div class="contain">
@@ -31,19 +41,6 @@
             <div class="card" id="card05"></div>
             <img src="" alt="" class="image" id="image05"><a href="" class="texto" id="texto01"></a><a href="" class="texto" id="texto02"></a>
             <div class="card" id="card06"></div>
-            <img src="" alt="" class="image" id="image06"><a href="" class="texto" id="texto01"></a><a href="" class="texto" id="texto02"></a>
-            <div class="card" id="card07"></div>
-            <img src="" alt="" class="image" id="image07"><a href="" class="texto" id="texto01"></a><a href="" class="texto" id="texto02"></a>
-            <div class="card" id="card08"></div>
-            <img src="" alt="" class="image" id="image08"><a href="" class="texto" id="texto01"></a><a href="" class="texto" id="texto02"></a>
-            <div class="card" id="card09"></div>
-            <img src="" alt="" class="image" id="image09"><a href="" class="texto" id="texto01"></a><a href="" class="texto" id="texto02"></a>
-            <div class="card" id="card10"></div>
-            <img src="" alt="" class="image" id="image10"><a href="" class="texto" id="texto01"></a><a href="" class="texto" id="texto02"></a>
-            <div class="card" id="card11"></div>
-            <img src="" alt="" class="image" id="image11"><a href="" class="texto" id="texto01"></a><a href="" class="texto" id="texto02"></a>
-            <div class="card" id="card12"></div>
-            <img src="" alt="" class="image" id="image12"><a href="" class="texto" id="texto01"></a><a href="" class="texto" id="texto02"></a></div>
     </div>
    </div>
 </main>
@@ -60,14 +57,6 @@
 </aside>
 
 
-
-
-
-
-
-
-  
-
-<script></script>
+<script src="./structure/interactions.js"></script>
 </body>
 </html>
