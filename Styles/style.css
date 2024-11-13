@@ -22,7 +22,7 @@ a:hover{background-color: hsla(0, 0%, 100%, 0.274) ;border: 2px solid hsla(40, 7
 
 #opc05 {position: relative;}
 
-.despPerfil {display: none;position: absolute;top: 98%;left: -55px;width: 100px;height: auto;margin:5px;padding:5px 12px; border: 2px solid hsla(40, 77%, 47%, 0.488);background-color: hsla(0, 0%, 100%, 0.274);border-radius: 16px 3px 6px 18px;z-index: 2}
+.despPerfil {display: none;position: absolute;top: 98%;left: -55px;width: 100px;height: auto;margin:5px;padding:5px 12px; border: 2px solid hsla(40, 77%, 47%, 0.488);background-color: hsla(0, 0%, 100%, 0.274);border-radius: 16px 3px 6px 18px;z-index: 3}
 
 .despPerfil.active {display: block; }
 
@@ -66,4 +66,138 @@ li{list-style-type: none;}
 
 .card img {width: 100%;height: 100%;object-fit: cover;z-index: 0}
 
-.imgAside{border: 3px solid white;width: auto;height: auto;margin: 20px 20px 20px 5px;border-radius: 15px;grid-row: span 1 / span 3;grid-column: span 3 / span 3;grid-column-start: 3;grid-row-start: 1;}
+.imgAside{border: 1px solid hsla(0, 0%, 100%, 0.26);box-shadow: 1px 2px 3px hsla(0, 0%, 100%, 0.227);width: auto;height: auto;margin: 20px 20px 20px 5px;border-radius: 15px;grid-row: span 1 / span 3;grid-column: span 3 / span 3;grid-column-start: 3;grid-row-start: 1;display: flex;align-items: flex-start;overflow: hidden;flex-direction: column;position: relative;}
+
+.carrusel {position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-size: cover;background-position: center;opacity: 0;animation: fadeInOut 84s linear infinite}
+
+.imgAside::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85));
+    z-index: 2;
+}
+
+.textoC {
+    position: absolute;
+    top: 86%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(233, 231, 230);
+    font-size: 1.6rem;
+    text-align: center;
+    z-index: 0;
+    padding: auto;
+    background: rgb(69, 67, 67);
+    border-radius: 10px;
+    transition: opacity 1s linear;
+    animation: fadeInOutText 84s linear infinite;
+}
+
+
+@keyframes fadeInOutText {
+    0% {
+        opacity: 0;
+        /* z-index: 0; */
+    }
+
+    4% {
+        opacity: 1;
+        /* z-index: 3; */
+    }
+
+    20% {
+        opacity: 1;
+        /* z-index: 3; */
+    }
+
+    80% {
+        opacity: 0;
+        /* z-index: 3; */
+        /* display: none !important */
+    }
+
+    100% {
+        opacity: 0;
+        /* z-index: 1; */
+        
+    }
+}
+
+@keyframes fadeInOut {0% {opacity: 0;}5% {opacity: 1;}20% {opacity: 1;}25% {opacity: 0;}100% {opacity: 0;}}
+    
+.carrusel:nth-child(1) {animation-delay: 0s;}       
+.carrusel:nth-child(3) {animation-delay: 6s;}       
+.carrusel:nth-child(5) {animation-delay: 12s;}       
+.carrusel:nth-child(7) {animation-delay: 18s;}       
+.carrusel:nth-child(9) {animation-delay: 24s;}       
+.carrusel:nth-child(11) {animation-delay: 30s;}       
+.carrusel:nth-child(13) {animation-delay: 36s;}       
+.carrusel:nth-child(15) {animation-delay: 42s;}       
+.carrusel:nth-child(17) {animation-delay: 48s;}       
+.carrusel:nth-child(19) {animation-delay: 54s;}       
+.carrusel:nth-child(21) {animation-delay: 60s;}       
+.carrusel:nth-child(23) {animation-delay: 66s;}       
+.carrusel:nth-child(25) {animation-delay: 72s;}      
+.carrusel:nth-child(27) {animation-delay: 78s;}
+
+
+
+.textoC:nth-child(2) {
+    animation-delay: 0s;
+}
+
+.textoC:nth-child(4) {
+    animation-delay: 5s;
+}
+
+.textoC:nth-child(6) {
+    animation-delay: 11s;
+}
+
+.textoC:nth-child(8) {
+    animation-delay: 17s;
+}
+
+.textoC:nth-child(10) {
+    animation-delay: 23s;
+}
+
+.textoC:nth-child(12) {
+    animation-delay: 29s;
+}
+
+.textoC:nth-child(14) {
+    animation-delay: 35s;
+}
+
+.textoC:nth-child(16) {
+    animation-delay: 41s;
+}
+
+.textoC:nth-child(18) {
+    animation-delay: 47s;
+}
+
+.textoC:nth-child(20) {
+    animation-delay: 53s;
+}
+
+.textoC:nth-child(22) {
+    animation-delay: 59s;
+}
+
+.textoC:nth-child(24) {
+    animation-delay: 65s;
+}
+
+.textoC:nth-child(26) {
+    animation-delay: 71s;
+}
+
+.textoC:nth-child(28) {
+    animation-delay: 77s;
+}
