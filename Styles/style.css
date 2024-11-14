@@ -66,7 +66,7 @@ li{list-style-type: none;}
 
 .card img {width: 100%;height: 100%;object-fit: cover;z-index: 0}
 
-.imgAside{border: 1px solid hsla(0, 0%, 100%, 0.26);box-shadow: 1px 2px 3px hsla(0, 0%, 100%, 0.227);width: auto;height: auto;margin: 20px 20px 20px 5px;border-radius: 15px;grid-row: span 1 / span 3;grid-column: span 3 / span 3;grid-column-start: 3;grid-row-start: 1;display: flex;align-items: flex-start;overflow: hidden;flex-direction: column;position: relative;}
+.imgAside{border: 1px solid hsla(0, 0%, 100%, 0.26);box-shadow: 1px 2px 3px hsla(0, 0%, 100%, 0.227);width: auto;height: auto;margin: 20px 20px 25px 5px;border-radius: 15px;grid-row: span 1 / span 3;grid-column: span 3 / span 3;grid-column-start: 3;grid-row-start: 1;display: flex;align-items: flex-start;overflow: hidden;flex-direction: column;position: relative;}
 
 .carrusel {position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-size: cover;background-position: center;opacity: 0;animation: fadeInOut 84s linear infinite}
 
@@ -77,53 +77,51 @@ li{list-style-type: none;}
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.96));
     z-index: 2;
+}
+
+.imgAside::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 2px solid hsla(0, 0%, 100%, 0.26);
+    border-radius: 13px;
+    pointer-events: none;
+    box-sizing: border-box;
+    z-index: 3;
 }
 
 .textoC {
     position: absolute;
-    top: 86%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(233, 231, 230);
     font-size: 1.6rem;
     text-align: center;
-    z-index: 0;
     padding: auto;
-    background: rgb(69, 67, 67);
-    border-radius: 10px;
-    transition: opacity 1s linear;
+    width: 90%;
+    height: 10%;
+    border-radius:3px;
+    background: rgb(0, 0, 0);
+    transition: opacity 2s linear;
     animation: fadeInOutText 84s linear infinite;
 }
 
 
 @keyframes fadeInOutText {
-    0% {
-        opacity: 0;
-        /* z-index: 0; */
-    }
-
-    4% {
+    from {
         opacity: 1;
-        /* z-index: 3; */
+        z-index: 3;
+        display:block;
     }
-
-    20% {
-        opacity: 1;
-        /* z-index: 3; */
-    }
-
-    80% {
+    to {
         opacity: 0;
-        /* z-index: 3; */
-        /* display: none !important */
-    }
-
-    100% {
-        opacity: 0;
-        /* z-index: 1; */
-        
+        display: none;
     }
 }
 
@@ -151,53 +149,53 @@ li{list-style-type: none;}
 }
 
 .textoC:nth-child(4) {
-    animation-delay: 5s;
+    animation-delay: 6s;
 }
 
 .textoC:nth-child(6) {
-    animation-delay: 11s;
+    animation-delay: 12s;
 }
 
 .textoC:nth-child(8) {
-    animation-delay: 17s;
+    animation-delay: 18s;
 }
 
 .textoC:nth-child(10) {
-    animation-delay: 23s;
+    animation-delay: 24s;
 }
 
 .textoC:nth-child(12) {
-    animation-delay: 29s;
+    animation-delay: 30s;
 }
 
 .textoC:nth-child(14) {
-    animation-delay: 35s;
+    animation-delay: 36s;
 }
 
 .textoC:nth-child(16) {
-    animation-delay: 41s;
+    animation-delay: 42s;
 }
 
 .textoC:nth-child(18) {
-    animation-delay: 47s;
+    animation-delay: 48s;
 }
 
 .textoC:nth-child(20) {
-    animation-delay: 53s;
+    animation-delay: 54s;
 }
 
 .textoC:nth-child(22) {
-    animation-delay: 59s;
+    animation-delay: 60s;
 }
 
 .textoC:nth-child(24) {
-    animation-delay: 65s;
+    animation-delay: 66s;
 }
 
 .textoC:nth-child(26) {
-    animation-delay: 71s;
+    animation-delay: 72s;
 }
 
 .textoC:nth-child(28) {
-    animation-delay: 77s;
+    animation-delay: 78s;
 }
