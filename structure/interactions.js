@@ -1,3 +1,5 @@
+// Eventos de clicks en opciones de navegación
+
 const clickDesp = document.querySelector('#opc03');
 const option = document.querySelector('.despOption');
 
