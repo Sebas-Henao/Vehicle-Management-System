@@ -43,7 +43,13 @@ li{list-style-type: none;}
 
 .texto{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);color: white;font-size: 1.2rem;text-align: center;z-index: 2;padding: auto;border-radius: 10px}
 
-#texto02{position: absolute;top: 80%;left: 50%;transform: translate(-50%, -50%);color: rgba(252, 131, 18, 0.912);font-size: 0.8rem;text-align: center;z-index: 2;padding: auto;background: rgba(69, 67, 67, 0.277);border-radius: 10px;}
+#texto02{position: absolute;top: 80%;left: 50%;transform: translate(-50%, -50%);color: rgba(255, 239, 10, 0.912);font-size: 0.8rem;text-align: center;z-index: 2;padding: auto;background: rgb(0, 0, 0);border-radius: 10px;}
+
+#texto03 {position: absolute;top: 35%;left: 50%;transform: translate(-50%, -50%);background-color: #151515ab;color: white;font-size: 15px;z-index: 2;padding: auto;border-radius: 3px}
+
+.Reporte{position: absolute;top: 80%;left: 50%;transform: translate(-50%, -50%);z-index:2;border-radius:5px;background-color: #273139;border: 2px solid hsla(0, 0%, 100%, 0.26);padding:3px 8px;color:azure;text-decoration: none}
+
+.Reporte:hover{background-color: hsla(0, 0%, 100%, 0.274) ;border: 2px solid hsla(40, 77%, 47%, 0.488) ;color:white ;font-size: 20px ;text-shadow: 3px 3px 3px hsla(13, 60%, 37%, 0.619) ;border-radius: 5px }
 
 .cardSpace {display: grid;grid-template-columns: repeat(2, 1fr);grid-template-rows: repeat(3, 1fr);gap: 20px;width: 98%;margin: 20px 10px 20px 10px;grid-column: span 2 / span 2;grid-row: span 3 / span 3;grid-column-start: 1;grid-row-start: 1}
 
@@ -72,7 +78,7 @@ li{list-style-type: none;}
 .card-inner::after {content: "";position: absolute;top: 10px;left: 10px;right: 10px;bottom: 10px;border: 2px solid hsla(0, 0%, 100%, 0.26);border-radius: 13px;pointer-events: none;box-sizing: border-box;z-index: 2;}
 
 .card-front,
-.card-back {position: absolute;width: 100%;height: 100%;backface-visibility: hidden;border: 1px solid #201916;border-radius: 15px;box-shadow: 1px 2px 3px hsla(0, 0%, 100%, 0.227);}
+.card-back {position: absolute;width: 100%;height: 100%;backface-visibility: hidden;border: 1px solid #201916;border-radius: 15px;box-shadow: 1px 2px 3px hsla(0, 0%, 100%, 0.227);text-align: justify;}
 
 .card-back {transform: rotateY(180deg);z-index: 1;}
 
